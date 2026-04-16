@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moreblessing | Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* ===== RESPONSIVE FIX (PASTE AT BOTTOM OF CSS) ===== */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR FIX */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* HERO FIX */
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* FEATURES (3 CARDS STACK ON MOBILE) */
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  /* CONTACT FORM FIX */
+  .contact input,
+  .contact textarea {
+    width: 90%;
+  }
+}
+/* TABLET FIX */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 45%;
+  }
+}
+
+/* DESKTOP FIX */
+@media (min-width: 1025px) {
+  .contact input,
+  .contact textarea {
+    width: 400px;
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: #0f0f0f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00ff9d;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #111, #222);
+  color: white;
+  padding: 20px;
+}
+
+.hero img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 3px solid #00ff9d;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 600px;
+  opacity: 0.8;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold-green {
+  font-weight: bold;
+  color: green;
+}
+
+.blue-green {
+  color: teal;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact {
+  background: #111;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  border: none;
+  background: #00ff9d;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Moreblessing</div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="1769692810923.jpg" alt="Profile">
+  <h1>Hello, I'm Moreblessing</h1>
+  <p>I am a UI/UX designer and web developer who creates clean, modern and user-friendly digital experiences.</p>
+</section>
+
+<!-- FEATURES (3 IMAGES + TEXT) -->
+<section class="features">
+  <div class="card">
+    <img src="onboarding .png" alt="image 1">
+    <p class="italic">I design clean UI layouts</p>
+  </div>
+
+  <div class="card">
+    <img src="pink setup (2).jpg" alt="image 2">
+    <p class="bold-green">I build responsive websites</p>
+  </div>
+
+  <div class="card">
+    <img src="user flow.jpg" alt="image 3">
+    <p class="blue-green">I create smooth user experiences</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p>I am a passionate beginner in UI/UX design and web development focused on clean design and usability.</p>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <h2>Projects</h2>
+  <p>I have built small web projects using HTML and CSS as I grow my skills.</p>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <h2>Services</h2>
+  <p>I offer UI/UX design, website development, and responsive web design.</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+
+  <form>
+    <input type="text" placeholder="Name"><br>
+    <input type="email" placeholder="Email"><br>
+    <textarea placeholder="Message"></textarea><br>
+    <button>Send</button>
+  </form>
+</section>
+
+</body>
+</html>
