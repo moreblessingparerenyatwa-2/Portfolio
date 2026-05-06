@@ -12,69 +12,7 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-/* ===== RESPONSIVE FIX (PASTE AT BOTTOM OF CSS) ===== */
-
-@media (max-width: 768px) {
-
-  /* NAVBAR FIX */
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 20px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  /* HERO FIX */
-  .hero {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .hero h1 {
-    font-size: 26px;
-  }
-
-  .hero p {
-    font-size: 14px;
-  }
-
-  /* FEATURES (3 CARDS STACK ON MOBILE) */
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%;
-  }
-
-  /* CONTACT FORM FIX */
-  .contact input,
-  .contact textarea {
-    width: 90%;
-  }
-}
-/* TABLET FIX */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .card {
-    width: 45%;
-  }
-}
-
-/* DESKTOP FIX */
-@media (min-width: 1025px) {
-  .contact input,
-  .contact textarea {
-    width: 400px;
-  }
-}
-
-/* NAVBAR */
+/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -218,11 +156,6 @@
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
   .hero h1 {
     font-size: 28px;
   }
